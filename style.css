@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* Deep charcoal with a hint of warmth */
+    background: #0f0a0a;
+    color: #fff5f2;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ff4d00;
+    /* Vivid Orange */
+}
+
+.navbar a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #ffbd9b;
+    /* Warm Peach */
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff0000;
+    /* Pure Red highlight */
+    text-shadow: 0 0 10px #ff0000;
+}
+
+/* HOME */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    color: #fff;
+}
+
+.home-content h3 {
+    font-size: 32px;
+}
+
+.home-content p {
+    margin: 15px 0;
+    color: #e2d1c3;
+}
+
+span {
+    /* The "Eye-Warming" Pop */
+    color: #ff8c00;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    /* Fire Gradient */
+    background: linear-gradient(45deg, #ff0000, #ff8c00);
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 25px #ff4d00;
+    transform: translateY(-3px);
+}
+
+.home-img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Your photo (main focus) */
+.main-img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Glowing red/orange border */
+    border: 5px solid #ff4d00;
+    box-shadow: 0 0 30px rgba(255, 77, 0, 0.5);
+    transition: 0.3s;
+}
+
+.main-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.6);
+}
+
+/* SECTION */
+.about-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.about-list li {
+    /* Warm dark card */
+    background: #1a1212;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 5px solid #ff0000;
+    transition: 0.3s;
+}
+
+.about-list li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    background: #251818;
+}
+
+.about-list span {
+    color: #ff8c00;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px 10%;
+}
+
+.academic-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.academic-list li {
+    background: #1a1212;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 5px solid #ff8c00;
+    transition: 0.3s;
+}
+
+.academic-list li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.2);
+}
+
+.academic-list span {
+    color: #ff8c00;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff4d00;
+}
+
+/* SKILLS */
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.skills-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.skills-list li {
+    background: #1a1212;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 5px solid #ff0000;
+    transition: 0.3s;
+}
+
+.skills-list li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+}
+
+.skills-list span {
+    color: #ff4d00;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* PROJECTS */
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.project {
+    width: 400px;
+    background: #1a1212;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    /* Orange bottom border for projects */
+    border-bottom: 3px solid #ff8c00;
+}
+
+/* CONTACT ICONS */
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ff4d00;
+    border-radius: 50%;
+    margin: 10px;
+    color: #ff4d00;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #ff4d00;
+    color: #0f0a0a;
+    box-shadow: 0 0 15px #ff4d00;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #050303;
+    border-top: 1px solid #1a1212;
+    color: #8a7b7b;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+}
